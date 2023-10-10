@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1064195404522",
+    "project_id": "brl-login-task",
+    "storage_bucket": "brl-login-task.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1064195404522:android:1363bc3d383241f6265d93",
+        "android_client_info": {
+          "package_name": "com.example.trainee_login"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1064195404522-3nev26oevjn9g053mc291jlvutpjdn39.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trainee_login",
+            "certificate_hash": "ce40ccc58f5fef80268c93cd83b29f91523892d2"
+          }
+        },
+        {
+          "client_id": "1064195404522-ivd807uajrh0ikhat6l2kfd44r3e7fmi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTVemBDQbjwhs6m-QhWFuKZ5G3irbjbcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1064195404522-ivd807uajrh0ikhat6l2kfd44r3e7fmi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
