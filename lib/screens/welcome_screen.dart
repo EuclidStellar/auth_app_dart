@@ -9,128 +9,130 @@ class Welcome extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         body: SafeArea(
-            child: Padding(
-      padding: const EdgeInsets.all(16.0),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-
-          const Text(
-            'Welcome to \n BRL Trainee',
-            textAlign: TextAlign.start,
-            style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-          ),
-
-
-          const SizedBox(
-            height: 30,
-          ),
-
-          
-          const Align(
-            alignment: Alignment.center,
-            child: Text(
-              'Develop     Deploy     Distribute ',
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.w700,
-                  color: Color.fromARGB(255, 46, 139, 193)),
-            ),
-          ),
-
-
-          const SizedBox(
-            height: 90,
-          ),
-
-
-          Center(
-            child: SizedBox(
-              width: double.infinity,
-              // height: MediaQuery.of(context).size.height * 0.75,
-              // width: MediaQuery.of(context).size.width * 1,
-              child: Image.asset('assets/images/img1.png'),
-            ),
-          ),
-
-
-          const SizedBox(
-            height: 40, // Add some spacing between the images
-          ),
-
-
-          Center(
-            child: SizedBox(
-              // width: double.infinity,
-              width: MediaQuery.of(context).size.width * 0.25,
-              //height: MediaQuery.of(context).size.height * 0.75,
-              child: Image.asset(
-                'assets/images/brl_logo.png',
-                fit: BoxFit.scaleDown,
+            child: SingleChildScrollView(
+              child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+            
+                      const Text(
+              'Welcome to \n BRL Trainee',
+              textAlign: TextAlign.start,
+              style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                      ),
+            
+            
+                      const SizedBox(
+              height: 30,
+                      ),
+            
+                      
+                      const Align(
+              alignment: Alignment.center,
+              child: Text(
+                'Develop     Deploy     Distribute ',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.w700,
+                    color: Color.fromARGB(255, 46, 139, 193)),
               ),
-            ),
-          ),
-
-
-          const SizedBox(
-            height: 60,
-          ),
-
-
-          Container(
-            height: 60,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              color: Colors.white,
-            ),
-            child: Row(
-              children: [
-
-
-                Expanded(
-                  child: MyTextButton(
-                    buttonName: 'Login',
-                    onTap: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const LoginScreen(title: 'Login',),
-                        ),
-                      );
-                    },
-                    bgColor: Colors.black,
-                    textColor: Colors.white,
+                      ),
+            
+            
+                      const SizedBox(
+              height: 90,
+                      ),
+            
+            
+                      Center(
+              child: SizedBox(
+                width: double.infinity,
+                // height: MediaQuery.of(context).size.height * 0.75,
+                // width: MediaQuery.of(context).size.width * 1,
+                child: Image.asset('assets/images/img1.png'),
+              ),
+                      ),
+            
+            
+                      const SizedBox(
+              height: 40, // Add some spacing between the images
+                      ),
+            
+            
+                      Center(
+              child: SizedBox(
+                // width: double.infinity,
+                width: MediaQuery.of(context).size.width * 0.25,
+                //height: MediaQuery.of(context).size.height * 0.75,
+                child: Image.asset(
+                  'assets/images/brl_logo.png',
+                  fit: BoxFit.scaleDown,
+                ),
+              ),
+                      ),
+            
+            
+                      const SizedBox(
+              height: 60,
+                      ),
+            
+            
+                      Container(
+              height: 60,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.white,
+              ),
+              child: Row(
+                children: [
+            
+            
+                  Expanded(
+                    child: MyTextButton(
+                      buttonName: 'Login',
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const LoginScreen(title: 'Login',),
+                          ),
+                        );
+                      },
+                      bgColor: Colors.black,
+                      textColor: Colors.white,
+                    ),
+                  ),
+            
+            
+                  const SizedBox(
+                    width: 10,
+                  ),
+            
+            
+                  Expanded(
+                    child: MyTextButton(
+                      buttonName: 'Sign Up',
+                      onTap: () {
+                         Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const SignUp(),));
+                      },
+                      bgColor: Colors.black,
+                      textColor: Colors.white,
+                    ),
+                  ),
+            
+            
+                ],
+              ),
+                      )
+                    ],
                   ),
                 ),
-
-
-                const SizedBox(
-                  width: 10,
-                ),
-
-
-                Expanded(
-                  child: MyTextButton(
-                    buttonName: 'Sign Up',
-                    onTap: () {
-                       Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => const SignUp(),));
-                    },
-                    bgColor: Colors.black,
-                    textColor: Colors.white,
-                  ),
-                ),
-
-
-              ],
-            ),
-          )
-        ],
-      ),
-    )));
+            )));
   }
 }
 
