@@ -8,6 +8,7 @@ import 'firebase_options.dart';
 // FIrebase Implmentation is going to start from this commit 
 void main() async{
   WidgetsFlutterBinding.ensureInitialized();
+  
   await Firebase.initializeApp(
   options: DefaultFirebaseOptions.currentPlatform,
 );
