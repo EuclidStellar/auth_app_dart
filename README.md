@@ -19,13 +19,13 @@ This Flutter app serves as a comprehensive authentication solution for Android a
   - Sign in with Google credentials.
 - **Phone Authentication:**
   - Verify identity using a phone number and SMS verification.
-
+```
 ## Technologies Used
 
 - [Flutter](https://flutter.dev/) - UI toolkit for building natively compiled applications for mobile, web, and desktop from a single codebase.
 - [Firebase](https://firebase.google.com/) - Backend services for mobile and web applications.
 
-```
+
 
 ## How to Use
 
